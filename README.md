@@ -1,4 +1,4 @@
-# Stock Analysis Tool
+# Hand&Brain - AI Stock Assistant
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a42a1162-0ab8-41a5-95b0-a1df348c6353" alt="Hand&Brain Logo" width="200"/>
