@@ -2,9 +2,9 @@
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a42a1162-0ab8-41a5-95b0-a1df348c6353" alt="Hand&Brain Logo" width="200"/>
-  <h3>Intelligent Stock Analysis with AI-Powered Prediction</h3>
+  <h3>Your Personal AI Trading Companion: Simplifying Investment Decisions</h3>
   
-  *Advanced technical analysis, machine learning models, and interactive visualization*
+  *Making complex markets simple with personalized, goal-oriented investment guidance*
   
   [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
   [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
@@ -13,7 +13,14 @@
 
 ## 📋 Overview
 
-Hand&Brain is a comprehensive Python application that combines traditional technical analysis with cutting-edge AI models to provide in-depth stock market analysis and predictions. Built on advanced machine learning algorithms including Conditional GANs, LSTMs, and Transformer models, this tool delivers sophisticated market insights with intuitive visualizations to help investors make informed decisions. The system integrates technical indicators, fundamental metrics, and sentiment analysis to provide a holistic view of market opportunities tailored to individual risk profiles.
+Hand&Brain transforms how individual investors approach the stock market by providing a highly personalized trading companion that adapts to your specific financial goals. In today's volatile markets influenced by countless factors - from geopolitical events to technological disruptions - Hand&Brain stands as your intelligent assistant, simplifying complexity and delivering clear, actionable insights tailored to your investment profile.
+
+Unlike traditional stock analysis tools, Hand&Brain focuses on the complete user journey, building recommendations around three key personal factors:
+- **Investment Amount**: Tailoring strategies to your available capital
+- **Risk Tolerance**: Aligning recommendations with your comfort level
+- **Time Horizon**: Optimizing for your specific timeframe goals
+
+By combining advanced AI models with intuitive user experience, Hand&Brain doesn't just tell you what's happening in the market - it tells you what it means for YOU, recommending not just what stocks to buy, but precisely when to buy and sell them based on your personal financial objectives.
 
 ## ✨ Key Features
 
@@ -21,18 +28,18 @@ Hand&Brain is a comprehensive Python application that combines traditional techn
   <tr>
     <td>
       <ul>
-        <li>📊 <b>Comprehensive Technical Analysis</b>: RSI, MACD, Bollinger Bands, and moving averages</li>
-        <li>🔮 <b>AI-Powered Predictions</b>: Price forecasting using advanced ML models (cGANs, LSTMs, Transformers)</li>
-        <li>🤖 <b>Reinforcement Learning</b>: Optimized buy/sell decision strategies through simulated environments</li>
-        <li>🌍 <b>Multi-Exchange Support</b>: Compatible with US stocks, NSE (India), and BSE (India)</li>
+        <li>👤 <b>Personalized Investment Journey</b>: Recommendations tailored to your capital, risk tolerance, and timeframe</li>
+        <li>⏱️ <b>Perfect Timing Signals</b>: AI-powered entry and exit points specific to your goals</li>
+        <li>🛡️ <b>Risk Management Framework</b>: Strategy adjustments based on your personal risk profile</li>
+        <li>🔄 <b>Adaptive Learning</b>: System becomes more attuned to your preferences over time</li>
       </ul>
     </td>
     <td>
       <ul>
-        <li>📈 <b>Pattern Recognition</b>: Automatic identification of chart patterns and trading signals</li>
-        <li>📰 <b>Sentiment Analysis</b>: News and social media sentiment integration</li>
-        <li>📱 <b>Interactive Dashboards</b>: Beautiful, information-rich visualizations with multiple panels</li>
-        <li>⚖️ <b>Risk-Adjusted Recommendations</b>: Personalized insights based on user risk tolerance</li>
+        <li>💼 <b>Portfolio Optimization</b>: Holistic view considering your existing investments</li>
+        <li>🔮 <b>Goal-Based Forecasting</b>: Predictive models aligned with your financial targets</li>
+        <li>📱 <b>Intuitive Interface</b>: Complex data translated into clear, actionable recommendations</li>
+        <li>📊 <b>Scenario Planning</b>: Test potential outcomes before committing capital</li>
       </ul>
     </td>
   </tr>
@@ -40,43 +47,45 @@ Hand&Brain is a comprehensive Python application that combines traditional techn
 
 ## 🧠 AI Prediction Models
 
-Hand&Brain employs multiple advanced AI approaches for stock prediction:
+Hand&Brain employs multiple advanced AI approaches to deliver personalized investment guidance:
 
-- **Conditional GANs (cGANs)**: Generate realistic market scenarios for robust model training
-- **LSTM Networks**: Capture temporal patterns in time-series stock data
-- **Transformer Models**: Identify long-term dependencies using attention mechanisms
-- **Reinforcement Learning**: Optimize trading strategies in simulated environments
-- **Ensemble Methods**: Combine predictions from multiple models for improved accuracy
+- **Conditional GANs (cGANs)**: Generate realistic market scenarios for your risk profile
+- **LSTM Networks**: Track temporal patterns aligned with your investment timeline
+- **Transformer Models**: Identify long-term dependencies relevant to your goals
+- **Reinforcement Learning**: Optimize trading strategies for your specific objectives
+- **Ensemble Methods**: Combine predictions for accuracy across your investment horizon
 
-Models are evaluated using rigorous metrics:
-- Regression: RMSE, MAE, R-squared
-- Classification: Accuracy, Precision, Recall, F1-score
+Each model is calibrated to your personal investment parameters and evaluated using:
+- Alignment with your financial goals
+- Performance within your risk tolerance
+- Success across your desired timeframe
+- Adaptation to your changing preferences
 
-## 📊 Analysis Dashboard
+## 📊 Personalized Dashboard
 
-The system includes a powerful analytics dashboard providing:
+The user-centric dashboard transforms complex data into clear guidance:
 
-- 📈 Price action with multiple timeframes
-- 📊 Technical indicators visualization
-- 🔄 AI-generated price predictions
-- 💹 Performance metrics comparison
-- 🎯 Buy/Sell signal generation
-- 📑 Fundamental data integration
-- 📰 News sentiment analysis
+- 🎯 Stock recommendations matched to your unique profile
+- ⏰ Entry and exit timing customized to your goals
+- 🛡️ Risk assessment calibrated to your comfort level
+- 💰 Expected returns projections based on your timeframe
+- 📈 Visual simplification of complex market patterns
+- 🔍 Jargon-free explanations of recommendations
+- 🚦 Clear "buy," "hold," or "sell" signals
 
 ## 🔍 Data Sources & Processing
 
-Hand&Brain integrates data from multiple sources:
+Hand&Brain integrates data from multiple sources, processed with your goals in mind:
 
-- **Market Data**: Historical prices from Yahoo Finance, Alpha Vantage, and Quandl
-- **Sentiment Data**: News articles (Financial Times, NewsAPI) and social media
-- **Fundamental Metrics**: Company financials, earnings reports, and sector data
+- **Market Data**: Historical prices filtered and analyzed for relevance to your strategy
+- **Sentiment Data**: News and social media analyzed through the lens of your investment objectives
+- **Fundamental Metrics**: Company financials evaluated according to your risk profile
 
-Data processing pipeline includes:
-- Automated data cleaning and normalization
-- Feature engineering for technical indicators
-- NLP processing for sentiment extraction
-- Time-series data preparation for AI models
+Data processing is personalized to extract insights that matter to you:
+- Custom filtering based on your investment preferences
+- Feature engineering aligned with your strategy needs
+- NLP processing prioritizing information relevant to your goals
+- Time-series preparation optimized for your investment timeframe
 
 ## 🖥️ System Requirements
 
@@ -123,34 +132,33 @@ newsapi-python>=0.2.6
 
 ## 🎮 Usage
 
-### Basic Analysis
+### Personal Profile Setup
 
 Run the main script:
 ```bash
 python stock_analysis.py
 ```
 
-Enter any stock ticker symbol when prompted. The tool will:
-1. Automatically detect the appropriate exchange (NSE/BSE/US)
-2. Fetch historical data for the selected timeframe
-3. Calculate technical indicators
-4. Generate AI predictions for future price movements
-5. Create a comprehensive visualization dashboard
-6. Save the analysis as a PNG file
+Follow the setup wizard to create your investor profile:
+1. Enter your investment amount
+2. Define your risk tolerance level
+3. Specify your target timeframe
+4. Input any existing portfolio holdings (optional)
+5. Set your financial goals and preferred investment sectors
 
 ### Advanced Options
 
 For advanced options:
 ```bash
-python stock_analysis.py --ticker AAPL --days 180 --indicators all --model ensemble --risk-level moderate --output report.png
+python stock_analysis.py --ticker AAPL --capital 10000 --risk-level moderate --time-horizon 12 --goals "college_fund,retirement" --output report.png
 ```
 
 Available parameters:
-- `--ticker`: Stock symbol (e.g., AAPL, RELIANCE.NS)
-- `--days`: Number of days for historical data (default: 180)
-- `--indicators`: Indicators to calculate (options: all, basic, custom)
-- `--model`: AI model to use (options: lstm, transformer, cgan, ensemble)
-- `--risk-level`: User risk tolerance (options: conservative, moderate, aggressive)
+- `--ticker`: Stock symbol to analyze (e.g., AAPL, RELIANCE.NS)
+- `--capital`: Investment amount available (default: 10000)
+- `--risk-level`: Your risk tolerance (options: conservative, moderate, aggressive)
+- `--time-horizon`: Target timeframe in months (default: 12)
+- `--goals`: Your financial objectives (comma-separated)
 - `--output`: Output filename for the generated report
 
 ## 🏗️ Technical Architecture
@@ -159,7 +167,13 @@ Available parameters:
   <img src="https://github.com/user-attachments/assets/a6ac1389-15b9-432b-8423-b29e92fb396d" alt="System Architecture" width="700">
 </div>
 
-The Hand&Brain system consists of several key components:
+The Hand&Brain system centers around the user experience with several key components:
+
+### User Profile Engine
+- `ProfileManager`: Creates and maintains your investor profile
+- `GoalTranslator`: Converts your objectives into technical parameters
+- `RiskProfiler`: Calibrates analysis to your risk tolerance
+- `TimeHorizonOptimizer`: Aligns strategies with your timeframe
 
 ### Data Retrieval & Processing
 - `MarketDataFetcher`: Retrieves historical market data with error handling
@@ -167,56 +181,50 @@ The Hand&Brain system consists of several key components:
 - `SentimentCollector`: Gathers and processes news and social media data
 - `DataPipeline`: Cleans and preprocesses raw market data
 
-### Technical Analysis
-- `IndicatorFactory`: Calculates various technical indicators
-- `SignalGenerator`: Identifies buy/sell signals and patterns
-- `SectorAnalyzer`: Performs sector-specific analysis and comparisons
+### Technical Analysis & AI
+- `IndicatorFactory`: Calculates technical indicators relevant to your profile
+- `SignalGenerator`: Identifies buy/sell signals aligned with your goals
+- `PredictionEngine`: Implements forecasting models tailored to your needs
+- `SentimentAnalyzer`: Processes sentiment from your investment perspective
 
-### Machine Learning
-- `PredictionEngine`: Implements multiple time series forecasting models
-- `SentimentAnalyzer`: Processes news and social media sentiment using NLP
-- `PatternRecognizer`: Identifies chart patterns using computer vision
-- `RiskProfiler`: Adjusts predictions based on user risk tolerance
-
-### Visualization
-- `DashboardBuilder`: Creates multi-panel visualization dashboards
-- `ChartRenderer`: Renders individual chart components
-- `ReportGenerator`: Produces comprehensive analysis reports
+### Visualization & Guidance
+- `PersonalDashboard`: Creates visualization tailored to your preferences
+- `DecisionSimplifier`: Converts complex analysis into actionable guidance
+- `ReportGenerator`: Produces analysis reports customized to your needs
 
 ## 📈 Sample Output
 
-The tool generates comprehensive dashboards like this:
+The tool generates personalized dashboards like this:
 
-![Sample Dashboard](https://github.com/user-attachments/assets/a6ac1389-15b9-432b-8423-b29e92fb396d)
+![Personalized Dashboard](https://github.com/user-attachments/assets/a6ac1389-15b9-432b-8423-b29e92fb396d)
 
-The dashboard includes:
-- Price chart with moving averages and AI prediction bands
-- Volume analysis with color-coded bars
-- RSI and MACD indicators
-- Price, volume, valuation, and performance metrics
-- Technical signals summary
-- Sentiment analysis results
-- Risk-adjusted recommendations
+Your dashboard includes:
+- Personalized recommendations based on your profile
+- Price chart with prediction bands calibrated to your risk level
+- Entry and exit points optimized for your timeframe
+- Risk assessment adjusted to your tolerance level
+- Goal alignment tracking for your financial objectives
+- Clear, actionable guidance in plain language
 
-## 🧪 Backtesting Framework
+## 🧪 Personalized Backtesting Framework
 
-Hand&Brain includes a robust backtesting system to validate investment strategies:
+Hand&Brain includes a backtesting system tailored to your goals:
 
-- Test strategies against historical data
-- Measure performance metrics (returns, drawdowns, Sharpe ratio)
-- Compare against benchmark indices
-- Simulate different market conditions
-- Optimize parameters for maximum returns
+- Test strategies against historical data using your risk parameters
+- Measure performance metrics relevant to your objectives
+- Compare results against your personal benchmarks
+- Simulate conditions specific to your investment timeline
+- Optimize parameters for your unique financial goals
 
 ## 📚 Documentation
 
 For more detailed information, please refer to the following documentation:
 
 - [User Guide](docs/UserGuide.md)
-- [Technical Indicators Reference](docs/TechnicalIndicators.md)
-- [AI Prediction Models](docs/AIPredictionModels.md)
-- [Sentiment Analysis Framework](docs/SentimentAnalysis.md)
-- [Backtesting System](docs/BacktestingFramework.md)
+- [Personal Profile Setup](docs/PersonalProfile.md)
+- [Goal-Based Investing](docs/GoalBasedInvesting.md)
+- [Risk Management Framework](docs/RiskManagement.md)
+- [Backtesting Your Strategy](docs/BacktestingFramework.md)
 - [API Documentation](docs/APIDocumentation.md)
 
 ## 📂 Project Structure
@@ -224,6 +232,11 @@ For more detailed information, please refer to the following documentation:
 ```
 stock-analysis-tool/
 ├── stock_analysis.py            # Main application script
+├── user/
+│   ├── profile_manager.py       # User profile creation and management
+│   ├── goal_translator.py       # Financial goal processing
+│   ├── risk_profiler.py         # Risk tolerance assessment
+│   └── horizon_optimizer.py     # Timeframe optimization
 ├── data/
 │   ├── fetcher.py               # Data retrieval module
 │   ├── processor.py             # Data preprocessing module
@@ -259,18 +272,18 @@ stock-analysis-tool/
 
 ## 🔬 Development Roadmap
 
-- [x] Core technical analysis implementation
-- [x] Interactive visualization dashboard
-- [x] Multi-exchange support
-- [x] LSTM and Transformer model implementation
-- [x] Sentiment analysis integration
-- [ ] Conditional GAN model implementation
-- [ ] Reinforcement learning trading agent
-- [ ] Portfolio optimization module
-- [ ] Real-time data feed integration
-- [ ] Mobile application development
-- [ ] Cloud-based deployment
-- [ ] API for third-party integration
+- [x] User profile generation and management
+- [x] Goal-based recommendation engine
+- [x] Risk-calibrated analysis system
+- [x] Time-horizon optimization
+- [x] LSTM and Transformer model personalization
+- [x] Sentiment analysis with goal alignment
+- [ ] Enhanced goal tracking and visualization
+- [ ] Multi-scenario planning tool
+- [ ] Portfolio optimization with existing holdings
+- [ ] Real-time adaptive recommendations
+- [ ] Mobile application with personalized alerts
+- [ ] Financial goal achievement forecasting
 
 ## 🤝 Contributing
 
@@ -292,8 +305,8 @@ python -m unittest discover tests
 
 For specific test categories:
 ```bash
-python -m unittest tests/test_indicators.py
-python -m unittest tests/test_ml_models.py
+python -m unittest tests/test_user_profile.py
+python -m unittest tests/test_goal_alignment.py
 ```
 
 ## 📄 License
@@ -302,10 +315,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## ⚠️ Disclaimer
 
-This tool is for informational purposes only. The technical analysis, AI predictions, and visualizations provided should not be considered financial advice. Always conduct your own research before making investment decisions. Past performance is not indicative of future results.
+This tool is for informational purposes only. The recommendations provided should not be considered financial advice. Always conduct your own research before making investment decisions. Hand&Brain aims to assist your decision-making process but cannot guarantee future returns. Past performance is not indicative of future results.
 
 ## 🙏 Acknowledgments
 
+- Our community of users for their valuable feedback
 - Yahoo Finance, Alpha Vantage, and Quandl for market data
 - TA-Lib community for technical analysis algorithms
 - TensorFlow, PyTorch, and Hugging Face teams for ML frameworks
