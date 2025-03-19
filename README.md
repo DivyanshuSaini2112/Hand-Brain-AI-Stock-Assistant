@@ -1,160 +1,147 @@
-# Hand&Brain AI Stock Assistant
+# Stock Analysis Tool
 
 <div align="center">
   <img src="assets/images/logo.png" alt="Hand&Brain Logo" width="200"/>
-  <h3>Intelligent Trading Decisions with AI Precision</h3>
+  <h3>Intelligent Stock Analysis with Interactive Visualization</h3>
 </div>
 
 ## Overview
 
-Hand&Brain is an AI-powered trading assistant that uses advanced predictive technology to provide data-driven investment decisions. The platform combines Reinforcement Learning (RL) with Conditional Generative Adversarial Networks (cGANs) to deliver personalized stock recommendations based on three key factors:
+Stock Analysis Tool is a comprehensive Python application that provides in-depth technical analysis and visualization of stock market data. Built on the Hand&Brain AI framework, this tool combines advanced data processing capabilities with intuitive visualizations to help investors make informed decisions.
 
-- Investment amount
-- Risk tolerance
-- Time horizon for returns
+![logo_H B](https://github.com/user-attachments/assets/fef67fb4-2c4d-436a-8ed2-3574007df389)
 
 ## Key Features
 
-- **Advanced AI Models**: Hybrid model combining cGANs and Reinforcement Learning
-- **Personalized Recommendations**: Custom stock suggestions based on user profile and goals
-- **Real-time Market Analysis**: Integration with financial news and market trends
-- **Trading Account Integration**: Monitor historical transactions for better predictions
-- **Adaptive Intelligence**: Continuous learning to improve recommendations over time
-- **User-friendly Interface**: Accessible for both casual investors and serious traders
+- **Comprehensive Technical Analysis**: Calculate RSI, MACD, Bollinger Bands, and moving averages
+- **Interactive Visualization**: Beautiful, information-rich dashboards with multiple panels
+- **Support for Multiple Markets**: Compatible with US stocks, NSE (India), and BSE (India)
+- **Technical Signal Generation**: Automatic identification of bullish and bearish patterns
+- **Performance Metrics**: Track daily, weekly, and monthly price changes
+- **Valuation Metrics**: Compare company P/E ratios with industry averages
 
 ## Technical Architecture
 
-Hand&Brain's prediction engine utilizes state-of-the-art AI techniques:
+The tool is built using a modular Python architecture:
 
-### Conditional GANs (cGANs)
-- Generate realistic market scenarios for various conditions
-- Simulate market behaviors close to real-world conditions
-- Create plausible future price movements across normal and volatile periods
+### Data Retrieval
+- Utilizes `yfinance` to fetch historical market data
+- Automatic market detection (NSE/BSE/US)
+- Fallback mechanisms for ticker symbol variations
 
-### Reinforcement Learning
-- Sequential decision-making optimized for trading environments
-- Agent learns optimal buy/sell strategies through interaction with simulated data
-- Adapts strategies based on user preferences and market conditions
-- Utilizes Proximal Policy Optimization (PPO) to enhance stability during market volatility
+### Technical Indicators
+- Moving averages (5, 20, 50, 200 days)
+- RSI (Relative Strength Index)
+- MACD (Moving Average Convergence Divergence)
+- Bollinger Bands
+- Average True Range (ATR)
+- Support and resistance levels
 
-## Project Structure
-
-```
-├── data/
-│   ├── historical/        # Historical stock data
-│   ├── processed/         # Processed and normalized data
-│   └── sentiment/         # Market sentiment analysis data  
-├── models/
-│   ├── cgan/              # Conditional GAN implementation
-│   ├── reinforcement/     # Reinforcement Learning modules
-│   └── evaluation/        # Model evaluation scripts
-├── api/
-│   ├── routes/            # API endpoints
-│   └── services/          # Backend services
-├── frontend/
-│   ├── components/        # UI components
-│   ├── pages/             # Application pages
-│   └── public/            # Static assets
-├── utils/
-│   ├── data_processing.py # Data preprocessing utilities
-│   └── visualization.py   # Data visualization tools
-├── tests/                 # Test suites
-├── docs/                  # Documentation
-└── README.md              # Project overview
-```
+### Visualization
+- Built on Matplotlib with custom styling
+- Modern, clean design with responsive layout
+- Color-coded signals and metrics
+- Multi-panel dashboard design
 
 ## Getting Started
 
 ### Prerequisites
 
 - Python 3.8+
-- Node.js 14+
-- MongoDB
-- TensorFlow 2.x
-- PyTorch 1.x
+- Required libraries: pandas, numpy, matplotlib, yfinance, ta
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/DivyanshuSaini2112/Hand-Brain-AI-Stock-Assistant.git
-   cd Hand-Brain-AI-Stock-Assistant
+   git clone https://github.com/DivyanshuSaini2112/stock-analysis-tool.git
+   cd stock-analysis-tool
    ```
 
-2. Install Python dependencies:
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Install frontend dependencies:
-   ```bash
-   cd frontend
-   npm install
-   ```
+### Usage
 
-4. Set up environment variables:
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
+Run the main script:
+```bash
+python stock_analysis.py
+```
 
-### Running the Application
+Enter any stock ticker symbol when prompted. The tool will:
+1. Automatically detect the appropriate exchange (NSE/BSE/US)
+2. Fetch 6 months of historical data
+3. Calculate technical indicators
+4. Generate a comprehensive visualization dashboard
+5. Save the analysis as a PNG file
 
-1. Start the backend:
-   ```bash
-   python app.py
-   ```
+## Core Functions
 
-2. Start the frontend:
-   ```bash
-   cd frontend
-   npm start
-   ```
+### Data Processing
 
-3. Access the application at `http://localhost:3000`
+- `fetch_stock_data()`: Retrieves historical price data with error handling
+- `create_technical_features()`: Calculates all technical indicators
+- `fetch_sector_pe()`: Estimates industry P/E ratios for comparison
+
+### Visualization
+
+- `visualize_stock_data()`: Creates the main dashboard with multiple panels
+- `create_fancy_table()`: Formats metrics in clean, readable tables
+- `create_signal_panel()`: Generates technical signal summaries
+- `add_panel_styling()`: Applies consistent styling across chart components
+
+## Integration with Hand&Brain AI
+
+This tool is designed to integrate with the Hand&Brain AI Stock Assistant, which provides:
+
+- Conditional GAN (cGAN) models for market simulation
+- Reinforcement Learning for trading strategy optimization
+- Personalized stock recommendations based on user preferences
+
+## Sample Output
+
+The tool generates comprehensive dashboards like this:
+
+![DLF Limited Analysis](![Screenshot 2025-03-19 225648](https://github.com/user-attachments/assets/50a4a05a-ceb0-4e02-b0e6-3be441af480f)
+)
+
+The dashboard includes:
+- Price chart with moving averages and Bollinger Bands
+- Volume analysis with color-coded bars
+- RSI and MACD indicators
+- Price, volume, valuation, and performance metrics
+- Technical signals summary
 
 ## Development Roadmap
 
-- [x] Core architecture design
-- [x] Data collection pipeline
-- [x] Basic cGAN implementation
-- [x] Reinforcement Learning foundation
-- [ ] Model optimization and hyperparameter tuning
-- [ ] Full sentiment analysis integration
-- [ ] Complete user dashboard
+- [x] Core technical analysis implementation
+- [x] Interactive visualization dashboard
+- [x] Multi-exchange support
+- [ ] Backtesting framework for strategy validation
+- [ ] Portfolio analysis and optimization
+- [ ] Integration with real-time data feeds
+- [ ] Machine learning-based pattern recognition
 - [ ] Mobile application development
-- [ ] Advanced portfolio optimization features
 
-## Technology Stack
+## Contributing
 
-- **Backend**: Python, Flask/FastAPI, MongoDB
-- **Frontend**: React, Redux, TailwindCSS
-- **ML/AI**: TensorFlow, PyTorch, Scikit-learn
-- **Data Processing**: Pandas, NumPy
-- **APIs**: Yahoo Finance, Alpha Vantage, NewsAPI
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Research Base
-
-This project builds upon research in:
-- Conditional Generative Adversarial Networks (cGANs)
-- Reinforcement Learning in financial markets
-- Feature selection techniques for financial data
-- Sentiment analysis for market prediction
-- Hybrid approaches combining multiple ML methodologies
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
-
-- Market data providers
-- Open-source AI/ML community
-- Financial research publications
-
 ## Disclaimer
 
-This application is for informational purposes only and does not constitute financial advice. Always conduct your own research before making investment decisions.
+This tool is for informational purposes only. The technical analysis and visualizations provided should not be considered financial advice. Always conduct your own research before making investment decisions.
 
 ---
 
