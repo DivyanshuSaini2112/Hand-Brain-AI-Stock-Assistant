@@ -1,7 +1,8 @@
 # Stock Analysis Tool
 
 <div align="center">
-  <img src="assets/images/logo.png" alt="Hand&Brain Logo" width="200"/>
+  <img src="![logo_H B](https://github.com/user-attachments/assets/fef67fb4-2c4d-436a-8ed2-3574007df389)
+" alt="Hand&Brain Logo" width="200"/>
   <h3>Intelligent Stock Analysis with Interactive Visualization</h3>
 </div>
 
@@ -9,7 +10,6 @@
 
 Stock Analysis Tool is a comprehensive Python application that provides in-depth technical analysis and visualization of stock market data. Built on the Hand&Brain AI framework, this tool combines advanced data processing capabilities with intuitive visualizations to help investors make informed decisions.
 
-![logo_H B](https://github.com/user-attachments/assets/fef67fb4-2c4d-436a-8ed2-3574007df389)
 
 ## Key Features
 
