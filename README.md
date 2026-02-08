@@ -123,16 +123,22 @@
 
 ```
 StoxAI/
-├── 📄 app.py                      # Main application entry point
-├── 📋 requirements.txt            # Python dependencies
-├── 📄 README.md                   # Documentation
-├── 📂 assets/                     # Static resources
-│   ├── styles.css                 # Custom styling
-│   └── logo.png                   # Brand assets
-├── 📂 stock_cache/                # Cache directory (auto-generated)
-│   └── *.pkl                      # Binary cache files
-└── 📂 docs/                       # Research & documentation
-    └── technical-analysis.pdf
+├── app.py                 # Main entry point – run with: python app.py
+├── requirements.txt       # Python dependencies
+├── README.md              # Documentation
+├── src/
+│   ├── __init__.py
+│   ├── config.py          # Theme colors, cache paths
+│   ├── cache.py           # CacheManager for price/news
+│   ├── data.py            # yfinance fetch, symbol resolution, news
+│   ├── analysis.py        # Technical indicators, risk metrics, signals
+│   ├── charts.py          # Plotly dashboard figure
+│   ├── layout.py          # Dash layout (navbar, search, footer)
+│   └── callbacks.py       # Dash callbacks (analyze, quick select)
+├── assets/                # Static resources (optional)
+│   └── custom.css         # Custom styling
+└── stock_cache/           # Cache directory (auto-generated)
+    └── *.pkl               # Binary cache files
 ```
 
 ---
@@ -175,7 +181,10 @@ cd StoxAI
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the application
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application (from project root)
 python app.py
 ```
 

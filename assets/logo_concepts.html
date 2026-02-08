@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoxAI - Minimal Logo Concepts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: #0F1216; color: #E6EAF0; padding: 40px 20px; line-height: 1.6; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 { font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; background: linear-gradient(135deg, #1DB954, #10B981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { color: #9AA4B2; font-size: 1.1rem; margin-bottom: 3rem; font-weight: 400; }
+        .logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+        .logo-card { background: #161B22; border: 1px solid #232A34; border-radius: 20px; padding: 3rem 2rem; text-align: center; transition: all 0.3s ease; }
+        .logo-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(29, 185, 84, 0.1); border-color: #1DB954; }
+        .logo-card h2 { font-size: 1.2rem; margin-bottom: 0.5rem; color: #1DB954; font-weight: 600; }
+        .logo-card p { color: #9AA4B2; font-size: 0.9rem; margin-bottom: 2rem; }
+        .logo-display { background: #0F1216; border-radius: 16px; padding: 3rem 2rem; margin-bottom: 1.5rem; min-height: 120px; display: flex; align-items: center; justify-content: center; }
+        .usage-tag { display: inline-block; background: rgba(29, 185, 84, 0.1); color: #1DB954; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin: 0.25rem; border: 1px solid rgba(29, 185, 84, 0.3); }
+        .typo-logo { font-size: 48px; display: inline-block; position: relative; }
+        .typo-stox { color: #9AA4B2; font-weight: 300; letter-spacing: -1px; }
+        .typo-ai { color: #1DB954; font-weight: 500; letter-spacing: -3px; }
+        .typo-dot { width: 6px; height: 6px; background: #1DB954; border-radius: 1px; display: inline-block; position: absolute; top: 18px; left: 75px; }
+        .signal-icon { width: 64px; height: 64px; background: #161B22; border: 1px solid #232A34; border-radius: 14px; display: inline-flex; align-items: flex-end; justify-content: center; gap: 4px; padding: 12px; }
+        .bar { width: 6px; border-radius: 3px; background: linear-gradient(to bottom, #1DB954, #10B981); }
+        .bar1 { height: 16px; opacity: 0.7; } .bar2 { height: 24px; opacity: 0.85; } .bar3 { height: 34px; opacity: 1; } .bar4 { height: 30px; opacity: 0.9; }
+        .comparison { background: #161B22; border: 1px solid #232A34; border-radius: 20px; padding: 3rem; margin-top: 3rem; }
+        .comparison h2 { font-size: 1.5rem; margin-bottom: 2rem; color: #E6EAF0; }
+        .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .comparison-item h3 { font-size: 1.1rem; color: #1DB954; margin-bottom: 1rem; }
+        .comparison-item ul { list-style: none; padding: 0; }
+        .comparison-item li { padding: 0.5rem 0; color: #9AA4B2; display: flex; align-items: center; }
+        .comparison-item li::before { content: "✓"; color: #1DB954; font-weight: bold; margin-right: 0.75rem; }
+        @media (max-width: 768px) { .logo-grid { grid-template-columns: 1fr; } .comparison-grid { grid-template-columns: 1fr; } .typo-logo { font-size: 32px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>StoxAI - Minimal Logo Concepts</h1>
+        <p class="subtitle">Ultra-premium, Bloomberg-level restraint. Two approaches designed for serious traders.</p>
+        <div class="logo-grid">
+            <div class="logo-card">
+                <h2>Option 1: Typographic</h2>
+                <p>Ultra-minimal. The logo IS the type.</p>
+                <div class="logo-display">
+                    <div class="typo-logo"><span class="typo-stox">Stox</span><span class="typo-ai">AI</span><span class="typo-dot"></span></div>
+                </div>
+                <div style="margin-top: 1rem;"><span class="usage-tag">Navbar</span><span class="usage-tag">Hero</span><span class="usage-tag">Email</span><span class="usage-tag">Print</span></div>
+            </div>
+            <div class="logo-card">
+                <h2>Option 3: Abstract Signal</h2>
+                <p>Data-driven visual. No literal charts.</p>
+                <div class="logo-display"><img src="stoxai_signal_icon.svg" alt="StoxAI Signal" style="height: 64px;"/></div>
+                <div style="margin-top: 1rem;"><span class="usage-tag">App Icon</span><span class="usage-tag">Favicon</span><span class="usage-tag">Social</span><span class="usage-tag">Mobile</span></div>
+            </div>
+        </div>
+        <div class="comparison" style="margin-top: 2rem; background: rgba(29, 185, 84, 0.05); border-color: rgba(29, 185, 84, 0.2);">
+            <h2 style="color: #1DB954;">Recommendation</h2>
+            <p style="color: #E6EAF0; font-size: 1.1rem; line-height: 1.8;">Use <strong>Signal Icon</strong> for navbar/favicon + <strong>Typographic</strong> for hero/marketing. Maximum versatility.</p>
+        </div>
+    </div>
+</body>
+</html>
